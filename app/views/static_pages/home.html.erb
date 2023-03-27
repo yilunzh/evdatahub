@@ -3,11 +3,11 @@
       <section class="jumbotron text-center">
         <div class="container heading">
 
-            <%= image_tag("ev_datahub_logo.png", height: 100, class: "jumbotron-heading") %>
-          <p class="lead text-muted">Research and data to understand EV trends in the context of the broader automotive market.</p>
-          <p class="lead text-muted"> I also write about EV and the automotive industry on twitter.</p>
+            <%= image_tag("china_evhub_logo.png", height: 100, class: "jumbotron-heading") %>
+          <p class="lead">Research and data to help make sense of the latest developments in the China EV industry</p>
+          <p class="lead"> I also write about EVs and the auto industry on twitter.</p>
           <p>
-            <a href="https://twitter.com/yilunzh" class="btn btn-primary my-2">Follow me on twitter</a>
+            <a href="https://twitter.com/yilunzh" class="btn btn-primary my-2">Follow me on Twitter</a>
 <!--             <button class="btn btn-secondary my-2"
               > Subscribe to newsletter</button> -->
           </p>
@@ -16,6 +16,9 @@
 
       <div class="album py-5 bg-light">
         <div class="container">
+          <div class="row">
+            <h2 class="mb-4">China Auto Market Share</h2>
+          </div>
 
           <div class="row">
             <div class="col-md-4">
@@ -28,7 +31,7 @@
                     <div class="btn-group">
                       <%= link_to 'View', market_share_by_makemodel_path, class: "btn btn-sm btn-outline-secondary"%>
                     </div>
-                    <small class="text-muted">Source: CPCA</small>
+                    <small class="text-muted">Source: China Insurance Data</small>
                   </div>
                 </div>
               </div>
@@ -43,7 +46,7 @@
                     <div class="btn-group">
                       <%= link_to 'View', market_share_by_makemodel_overtime_path, class: "btn btn-sm btn-outline-secondary"%>
                     </div>
-                    <small class="text-muted">Source: CPCA</small>
+                    <small class="text-muted">Source: China Insurance Data</small>
                   </div>
                 </div>
               </div>
@@ -53,13 +56,13 @@
                   <%= link_to image_tag("market_share_fueltype.png", height: 225, class: "card-img-top"),
                     market_share_by_fueltype_overtime_path %> 
                 <div class="card-body">
-                  <p class="card-text">Market share data for various different fuel type vehicles (i.e. ICE vs PHEV vs Battery eletric)</p>
+                  <p class="card-text">Market share data for vehicles by fuel type (i.e. ICE vs PHEV vs Battery eletric)</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <%= link_to 'View', market_share_by_makemodel_overtime_path, 
                           class: "btn btn-sm btn-outline-secondary"%>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">Source: China Insurance Data</small>
                   </div>
                 </div>
               </div>
@@ -70,13 +73,13 @@
                   <%= link_to image_tag("market_share_price.png", height: 225, class: "card-img-top"),
                     market_share_by_price_overtime_path %> 
                 <div class="card-body">
-                  <p class="card-text">Market share data for vehicles in various price segments(i.e. economy vs premium vs luxury)</p>
+                  <p class="card-text">Market share data for vehicles by price segments(i.e. economy vs premium vs luxury)</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <%= link_to 'View', market_share_by_price_overtime_path, 
                           class: "btn btn-sm btn-outline-secondary"%>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <small class="text-muted">Source: China Insurance Data</small>
                   </div>
                 </div>
               </div>

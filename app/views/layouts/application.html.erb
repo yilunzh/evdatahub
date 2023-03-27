@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EV Datahub</title>
+    <title>China EV Hub</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,14 +10,35 @@
     <%= stylesheet_link_tag "custom", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
 
-  <script id="mcjs">!function showMailingPopup(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/412fd75d8d6a30308dbf0752d/a22ca68636f0404d782c287bc.js");</script>
-
       
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 px-3">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+<!--     <i class="nav nav-logo bi bi-clipboard-data-fill"></i> -->
+    <%= link_to image_tag("nav_logo.png", height: 35, class: "jumbotron-heading nav-logo"), root_path, class: "nav navbar-brand" %>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="nav nav-hamburger bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item active">
+            <%= link_to 'Data', root_path, class: "nav nav-link" %>
+          </li>
+          <li class="nav-item active">
+            <%= link_to 'About', about_path, class: "nav nav-link" %>
+          </li>
+          <li class="nav-item">
+            <a class="nav nav-link" href="https://us6.list-manage.com/contact-form?u=412fd75d8d6a30308dbf0752d&form_id=f772b7de0044f0c68e4710e77278eaf3">Contact</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-1 px-3">
       <%= link_to 'EV Datahub', root_path, class: "navbar-brand" %>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,26 +49,15 @@
           <li class="nav-item active">
             <%= link_to 'Data', root_path, class: "nav-link" %>
           </li>
-<!--           <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="#">Newsletter</a>
-          </li> -->
-<!--           <li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="https://us6.list-manage.com/contact-form?u=412fd75d8d6a30308dbf0752d&form_id=f772b7de0044f0c68e4710e77278eaf3">Contact</a>
-          </li> -->
-    <!--       <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
+          </li>
         </ul>
       </div>
-    </nav>
+    </nav> -->
     <%= yield %>
   </body>
 </html>

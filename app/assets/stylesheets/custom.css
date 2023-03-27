@@ -2,6 +2,32 @@
   margin-top: 40px;
 }
 
-.site-header{
+.site-header {
   color: #212529
+}
+
+.nav {
+  color: white;
+}
+
+.nav-logo {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+.nav-hamburger {
+  font-size: 2rem; 
+}
+
+.dark-bg {
+  background-color: black;
+  color: white;
+}
+
+.nav-logo {
+  margin-right: 5px;
+}
+
+.nio-billboard {
+  background-image: url(nio-hero-desktop.jpg);
 }

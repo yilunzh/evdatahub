@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :greetings
-  resources :contacts, only: [:new, :create ]
+  resources :contacts, only: %i[new create]
   get '/contacts', to: 'contacts#new', as: 'contact'
   get 'contacts/sent'
 
@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   get 'market_share_by_fueltype_overtime' => 'static_pages#market_share_by_fueltype_overtime'
   get 'market_share_by_price_overtime' => 'static_pages#market_share_by_price_overtime'
   get 'contact' => 'static_pages#contact'
-  
+  get 'about' => 'static_pages#about'
+  get 'nio' => 'static_pages#nio'
 
   root 'static_pages#home'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
